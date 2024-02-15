@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "ambience"
+version = "0.1.0"
+description = ""
+authors = ["Eloi Vallverdú <eleloi@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "ambience", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+inquirerpy = "^0.3.4"
+click = "^8.1.7"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+pytest = "^8.0.0"
+pytest-watch = "^4.2.0"
+shiv = "^1.0.5"
+pdbpp = "^0.10.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+ambience = "ambience:main"
