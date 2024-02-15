@@ -43,5 +43,4 @@ def main(random: bool = False):
         elif answer == "❌ quit":
             exit(0)
         else:
-            breakpoint()
             _play_source(Source(**answer))
